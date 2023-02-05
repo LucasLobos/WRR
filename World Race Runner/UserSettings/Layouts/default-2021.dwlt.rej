@@ -1,0 +1,9 @@
+diff a/World Race Runner/UserSettings/Layouts/default-2021.dwlt b/World Race Runner/UserSettings/Layouts/default-2021.dwlt	(rejected hunks)
+@@ -14,6 +14,7 @@
+   m_EditorClassIdentifier: 
+   m_PixelRect:
+     serializedVersion: 2
++<<<<<<< .merge_file_a30980
+     x: 1536
+     y: 43
+     width: 1920
