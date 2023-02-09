@@ -178,6 +178,18 @@ CapsuleCollider:
   m_Height: 1.760252
   m_Direction: 1
   m_Center: {x: -0.0033285618, y: 0.7848697, z: 0}
+--- !u!114 &110273688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 110273681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 397fd594f9b5a8542ae0a3d0dc35b075, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &147309906 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5790868179436648870, guid: d0297a7731fb48a4ebae21ac1d3184b1,
@@ -913,6 +925,26 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1858974879835591605}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2001500579 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6563604210730885916, guid: d0297a7731fb48a4ebae21ac1d3184b1,
+    type: 3}
+  m_PrefabInstance: {fileID: 741137403}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2001500581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2001500579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edc4da1b156c2124cac7123cc53f8fb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  car: {fileID: 2001500579}
+  lifetime: 3
 --- !u!1 &2051699109
 GameObject:
   m_ObjectHideFlags: 0
