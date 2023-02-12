@@ -1,0 +1,4 @@
+El juego Word Race Ranner, es un ranner 3D con un personaje que posee animaciones y mecánicas que permiten realizar diferentes 
+acciones como colisionar, saltar, esquivar y tomar mate. El juego se desarrolla en una ciudad que posee diferentes obstáculos 
+que hacen a la dificultad del jugar. La scena posee un enemigo que persigue al corredor, intentando atraparlo.
+El jugador se mueve a la derecha (D) y a la izquierda (A), también puede saltar (W/space). 
