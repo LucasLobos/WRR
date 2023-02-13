@@ -26,4 +26,11 @@ public class MovementCamera : MonoBehaviour
             otherCamera.gameObject.SetActive(false);
         }
     }
+    
+    
+    
+    
+    
+    
+    
 }
