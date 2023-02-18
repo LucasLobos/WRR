@@ -34,4 +34,6 @@ public class GameManager : MonoBehaviour
         /*Debug.Log("Time Game " + timeElapsed);*/
     }
 
+  
+    
 }
