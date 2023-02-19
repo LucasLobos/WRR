@@ -5,7 +5,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     public bool dontDestroyOnLoad;
     [SerializeField] private float timeElapsed = 0;
-  
+    
     private void Awake()
     {
         if (instance == null)
@@ -33,7 +33,10 @@ public class GameManager : MonoBehaviour
         timeElapsed += Time.deltaTime;
         /*Debug.Log("Time Game " + timeElapsed);*/
     }
-
-  
     
+    
+    
+
+
+
 }

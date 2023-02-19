@@ -24,3 +24,4 @@ public class CarSpawn : MonoBehaviour
         InvokeRepeating("SpawnRandomObject", 0, _spawnInterval);
     }
 }
+
