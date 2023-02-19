@@ -13,13 +13,16 @@ public class PointArea : MonoBehaviour
     [SerializeField] private ColorState currentColor;
 
     private int _points = 0;
+    /*
     private int _totalPoints = 0;
+    */
 
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
+            
             /*GameManager manager = GameManager.instance;
             manager.AddPoints();*/
             AddSkills();

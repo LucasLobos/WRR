@@ -1,7 +1,6 @@
-using System;
-using System.Collections.Generic;
+
 using UnityEngine;
-using UnityEngine.Serialization;
+using UnityEngine.SceneManagement;
 
 
 public class PlayerMovement : MonoBehaviour
@@ -12,12 +11,14 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float jumpHeight = 300;
     [SerializeField] private bool grounded;
     [SerializeField] private LayerMask mask;
-    [SerializeField] private float life;
+    [SerializeField] private int maxHealth;
+    [SerializeField] private int currentHealth;
+    
 
 
     private void Start()
     {
-        life = 100;
+        currentHealth = maxHealth;
         rb = GetComponent<Rigidbody>();
     }
 
@@ -27,7 +28,7 @@ public class PlayerMovement : MonoBehaviour
         var direction = new Vector3(horizontal, 0, 0);
 
         MoveHorizontal(direction);
-
+        
         CheckGround();
 
 
@@ -36,6 +37,11 @@ public class PlayerMovement : MonoBehaviour
             Jump();
         }
 
+        if (currentHealth == 0)
+        {
+            LoseGame();
+        }
+        
         /*if (Input.GetKeyDown(KeyCode.F) && // Tiene que tener al menos 10 mates verdes)
         {
             inmortal();
@@ -71,5 +77,31 @@ public class PlayerMovement : MonoBehaviour
         rb.AddForce(Vector3.up * jumpHeight);
     }
 
+    public void RemoveLife(int p_damage)
+    {
+        currentHealth -= p_damage;
+        if (currentHealth < 0)
+        {
+            currentHealth = 0;
+        }
+
+    }
   
+    public void ReceiveLife(int p_life)
+    {
+        currentHealth += p_life;
+        if (currentHealth > maxHealth)
+        {
+            currentHealth = maxHealth;
+        }
+
+    }
+    
+    public void LoseGame()
+    {
+        SceneManager.LoadScene("Lose");
+
+    }
+    
 }
+    
