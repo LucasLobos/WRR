@@ -26,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
     {
         var horizontal = Input.GetAxisRaw("Horizontal");
         var direction = new Vector3(horizontal, 0, 0);
-
+        
         MoveHorizontal(direction);
         
         CheckGround();
@@ -55,6 +55,7 @@ public class PlayerMovement : MonoBehaviour
     private void MoveHorizontal(Vector3 moveHorizontal)
     {
         transform.position += moveHorizontal * (speed * Time.deltaTime);
+        
     }
 
     private void CheckGround()
