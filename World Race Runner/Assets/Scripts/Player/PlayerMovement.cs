@@ -11,8 +11,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float jumpHeight = 300;
     [SerializeField] private bool grounded;
     [SerializeField] private LayerMask mask;
-    [SerializeField] private int maxHealth;
-    [SerializeField] private int currentHealth;
+    [SerializeField] public int maxHealth;
+    [SerializeField] public int currentHealth;
     
 
 
@@ -87,7 +87,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
     }
-  
+    
     public void ReceiveLife(int p_life)
     {
         currentHealth += p_life;
