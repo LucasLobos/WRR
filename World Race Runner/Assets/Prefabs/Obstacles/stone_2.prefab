@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7578092490914869828}
   - component: {fileID: 5678544013768640142}
   - component: {fileID: 4287492694833259360}
+  - component: {fileID: -3324727842303952901}
   m_Layer: 0
   m_Name: stone_2
   m_TagString: Untagged
@@ -97,3 +98,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.725408, y: 0.47105595, z: 0.92888}
   m_Center: {x: 0.010554731, y: 0.23552807, z: -0.02783434}
+--- !u!114 &-3324727842303952901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6183092375392773979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75047a6ddc61724499b5f725e6653ece, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+  removeLife: 0
+  impactTime: 0.1
+  gyroSpeed: 10
