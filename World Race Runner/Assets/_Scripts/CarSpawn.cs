@@ -16,7 +16,7 @@ public class CarSpawn : MonoBehaviour
     
     private void Awake()
     {
-        _spawnInterval = Random.Range(2f, 10f);
+        _spawnInterval = Random.Range(2f, 5f);
     }
 
     void Start()

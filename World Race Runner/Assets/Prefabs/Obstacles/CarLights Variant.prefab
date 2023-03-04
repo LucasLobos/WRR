@@ -320,6 +320,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CarLights Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 4817440432585934006, guid: 683c15f9e972f4655b2620101423b704,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4897356844111587017, guid: 683c15f9e972f4655b2620101423b704,
         type: 3}
       propertyPath: m_Size.y
@@ -438,3 +443,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   removeLife: 50
+  impactTime: 2

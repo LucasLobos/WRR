@@ -9,7 +9,6 @@ public class CowObstacule : EntityObstacle
     
     void Update()
     {
-        
         transform.Translate(Vector3.left * speed * Time.deltaTime);
         transform.Rotate(Vector3.forward,gyroSpeed * Time.deltaTime);
     }

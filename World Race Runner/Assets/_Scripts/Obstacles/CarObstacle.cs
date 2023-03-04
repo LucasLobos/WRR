@@ -2,9 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CarObstacle : MonoBehaviour
+public class CarObstacle : EntityObstacle
 {
-    // Start is called before the first frame update
+  
+    
+    
+    
     void Start()
     {
         
