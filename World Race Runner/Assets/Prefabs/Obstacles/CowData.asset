@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bdca5de4c748224bb79817b60485e13, type: 3}
+  m_Name: CowData
+  m_EditorClassIdentifier: 
+  obstacleName: Cow
+  obstacleID: 1
+  speed: 5
+  canJump: 0
+  removeLife: 50
+  _currentTime: 0
+  impactTime: 0.1

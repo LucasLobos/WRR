@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7945771238246469905}
   - component: {fileID: 5476063078258351922}
   - component: {fileID: 8456931301936554837}
+  - component: {fileID: -3508547503716328139}
   m_Layer: 0
   m_Name: Tapa
   m_TagString: Obstacle
@@ -98,3 +99,21 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!114 &-3508547503716328139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8340829088167762941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8e26ee1f9f84874ba5596524e8cfe4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+  removeLife: 50
+  impactTime: 0.1
+  gyroSpeed: 10
+  jumpHeight: 10
+  onFloor: 1
