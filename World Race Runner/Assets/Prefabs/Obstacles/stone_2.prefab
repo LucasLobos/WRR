@@ -110,7 +110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8e26ee1f9f84874ba5596524e8cfe4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 20
   removeLife: 50
   impactTime: 0.1
   gyroSpeed: 0

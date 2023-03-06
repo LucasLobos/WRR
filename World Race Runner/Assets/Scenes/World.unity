@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 85532494}
   - component: {fileID: 85532493}
   m_Layer: 0
-  m_Name: Car3
+  m_Name: ObtacleRight
   m_TagString: Untagged
   m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -154,7 +154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   car:
   - {fileID: 7868376783526916310, guid: b759af08a31b92b4085c2569942fc621, type: 3}
-  - {fileID: 6563604210730885916, guid: d0297a7731fb48a4ebae21ac1d3184b1, type: 3}
+  - {fileID: 286153830726304827, guid: 19e1a729cdaffde47942701a4294450a, type: 3}
   - {fileID: 6183092375392773979, guid: 08ecb17a1aad1574494a5d71460785a2, type: 3}
   spawnPosition: {x: 0.29, y: 7.2, z: 59.02}
 --- !u!4 &85532494
@@ -178,26 +178,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1185447662}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &110273682
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 110273681}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8324697baa517d644949e134c75d5d5b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  jumpHeight: 5000
-  grounded: 0
-  mask:
-    serializedVersion: 2
-    m_Bits: 512
-  maxHealth: 150
-  currentHealth: 1500
 --- !u!4 &110273684 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: fd438aaa7a7754c4c8fa5195a5a9fbe9,
@@ -234,6 +214,34 @@ CapsuleCollider:
   m_Height: 1.760252
   m_Direction: 1
   m_Center: {x: -0.0033285618, y: 0.7848697, z: 0}
+--- !u!114 &110273688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 110273681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75205e5e76de2204683e18f64162038a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_speed: 5
+  m_jumpForce: 100
+  m_rigibody: {fileID: 110273685}
+--- !u!114 &110273689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 110273681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db5ef395834db3f4b9a8aa5d2904959b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_model: {fileID: 110273688}
 --- !u!1 &151315173
 GameObject:
   m_ObjectHideFlags: 0
@@ -407,7 +415,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: 824b045cfb5412444a2d59824cb98223, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: 824b045cfb5412444a2d59824cb98223, type: 3}
       propertyPath: m_LocalPosition.x
@@ -559,7 +567,7 @@ GameObject:
   - component: {fileID: 631325845}
   - component: {fileID: 631325844}
   m_Layer: 0
-  m_Name: Car1
+  m_Name: ObtacleLeft
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -579,7 +587,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   car:
   - {fileID: 7868376783526916310, guid: b759af08a31b92b4085c2569942fc621, type: 3}
-  - {fileID: 6563604210730885916, guid: d0297a7731fb48a4ebae21ac1d3184b1, type: 3}
+  - {fileID: 286153830726304827, guid: 19e1a729cdaffde47942701a4294450a, type: 3}
   - {fileID: 6183092375392773979, guid: 08ecb17a1aad1574494a5d71460785a2, type: 3}
   spawnPosition: {x: -4.12, y: 7.2, z: 46.11}
 --- !u!4 &631325845
@@ -1282,7 +1290,7 @@ MonoBehaviour:
   healhMeter1: {fileID: 1534337667}
   healhMeter2: {fileID: 1886220639}
   healhMeter3: {fileID: 690350921}
-  playerMovement: {fileID: 110273682}
+  playerMovement: {fileID: 0}
 --- !u!1 &1279383191
 GameObject:
   m_ObjectHideFlags: 0
@@ -1499,7 +1507,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: b70eb1cf1be37564f8063fba2095584b, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: b70eb1cf1be37564f8063fba2095584b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1629,6 +1637,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 475176987399376628, guid: 37070b6e0cc2e19409e3216371b332ed,
+        type: 3}
+      propertyPath: speed
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 2734863166660911218, guid: 37070b6e0cc2e19409e3216371b332ed,
         type: 3}
       propertyPath: m_RootOrder
@@ -1958,32 +1971,32 @@ PrefabInstance:
     - target: {fileID: 1050494275753300860, guid: 1b52f40f8dcf703418541d0c2e59c6c8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1079563474342970195, guid: 1b52f40f8dcf703418541d0c2e59c6c8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1691414666694665362, guid: 1b52f40f8dcf703418541d0c2e59c6c8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1792763679731971993, guid: 1b52f40f8dcf703418541d0c2e59c6c8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 2021099539525893892, guid: 1b52f40f8dcf703418541d0c2e59c6c8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2141137853780753683, guid: 1b52f40f8dcf703418541d0c2e59c6c8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 21
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 2422761881956580009, guid: 1b52f40f8dcf703418541d0c2e59c6c8,
         type: 3}
@@ -2078,32 +2091,32 @@ PrefabInstance:
     - target: {fileID: 4044222898996515200, guid: 1b52f40f8dcf703418541d0c2e59c6c8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 5012565530291077026, guid: 1b52f40f8dcf703418541d0c2e59c6c8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 19
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 5523072848861462613, guid: 1b52f40f8dcf703418541d0c2e59c6c8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 5808988679370585340, guid: 1b52f40f8dcf703418541d0c2e59c6c8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5945456298328663288, guid: 1b52f40f8dcf703418541d0c2e59c6c8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 6316666400011917032, guid: 1b52f40f8dcf703418541d0c2e59c6c8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 6377993873395611772, guid: 1b52f40f8dcf703418541d0c2e59c6c8,
         type: 3}
@@ -2118,7 +2131,7 @@ PrefabInstance:
     - target: {fileID: 6492336030001141898, guid: 1b52f40f8dcf703418541d0c2e59c6c8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 6539914151594458660, guid: 1b52f40f8dcf703418541d0c2e59c6c8,
         type: 3}
@@ -2128,12 +2141,12 @@ PrefabInstance:
     - target: {fileID: 7154352727037008163, guid: 1b52f40f8dcf703418541d0c2e59c6c8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7911669515768459010, guid: 1b52f40f8dcf703418541d0c2e59c6c8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 8782234297895373321, guid: 1b52f40f8dcf703418541d0c2e59c6c8,
         type: 3}
@@ -2256,7 +2269,7 @@ GameObject:
   - component: {fileID: 1900363927}
   - component: {fileID: 1900363926}
   m_Layer: 0
-  m_Name: Car2
+  m_Name: ObtacleCenter
   m_TagString: Untagged
   m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -2276,7 +2289,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   car:
   - {fileID: 7868376783526916310, guid: b759af08a31b92b4085c2569942fc621, type: 3}
-  - {fileID: 6563604210730885916, guid: d0297a7731fb48a4ebae21ac1d3184b1, type: 3}
+  - {fileID: 286153830726304827, guid: 19e1a729cdaffde47942701a4294450a, type: 3}
   - {fileID: 6183092375392773979, guid: 08ecb17a1aad1574494a5d71460785a2, type: 3}
   spawnPosition: {x: -1.78, y: 7.2, z: 84.63}
 --- !u!4 &1900363927

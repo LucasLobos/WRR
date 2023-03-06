@@ -24,23 +24,23 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        var horizontal = Input.GetAxisRaw("Horizontal");
-        var direction = new Vector3(horizontal, 0, 0);
+        //var horizontal = Input.GetAxisRaw("Horizontal");
+        //var direction = new Vector3(horizontal, 0, 0);
         
-        MoveHorizontal(direction);
+        //MoveHorizontal(direction);
         
         CheckGround();
 
 
-        if (Input.GetKeyDown(KeyCode.Space) && grounded)
-        {
-            Jump();
-        }
+        //if (Input.GetKeyDown(KeyCode.Space) && grounded)
+        //{
+        //    Jump();
+        //}
 
-        if (currentHealth == 0)
-        {
-            LoseGame();
-        }
+        //if (currentHealth == 0)
+        //{
+        //    LoseGame();
+        //}
         
         /*if (Input.GetKeyDown(KeyCode.F) && // Tiene que tener al menos 10 mates verdes)
         {
@@ -52,11 +52,11 @@ public class PlayerMovement : MonoBehaviour
         }*/
     }
 
-    private void MoveHorizontal(Vector3 moveHorizontal)
-    {
-        transform.position += moveHorizontal * (speed * Time.deltaTime);
+    //private void MoveHorizontal(Vector3 moveHorizontal)
+    //{
+    //    transform.position += moveHorizontal * (speed * Time.deltaTime);
         
-    }
+    //}
 
     private void CheckGround()
     {
@@ -73,10 +73,10 @@ public class PlayerMovement : MonoBehaviour
     }
 
 
-    private void Jump()
-    {
-        rb.AddForce(Vector3.up * jumpHeight);
-    }
+    //private void Jump()
+    //{
+    //    rb.AddForce(Vector3.up * jumpHeight);
+    //}
 
     public void RemoveLife(int p_damage)
     {
@@ -98,13 +98,11 @@ public class PlayerMovement : MonoBehaviour
 
     }
     
-    public void LoseGame()
-    {
-        SceneManager.LoadScene("Lose");
+    //public void LoseGame()
+    //{
+    //    SceneManager.LoadScene("Lose");
 
-    }
-    
-    
+    //}
     
 }
     
