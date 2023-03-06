@@ -18,6 +18,10 @@ public class GenericController : MonoBehaviour
         m_model.GetControllerRef(this);
     }
 
+    private void Start()
+    {
+        
+    }
 
     private void Update()
     {

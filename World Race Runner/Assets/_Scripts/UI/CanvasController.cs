@@ -29,12 +29,16 @@ public class CanvasController : MonoBehaviour
     private void Awake()
     { 
         /*var playerMovement =  GetComponent<PlayerMovement>();*/
+        /*
         playerMovement.currentHealth = playerMovement.maxHealth;
+    */
     }
 
     private void Update()
     {
+        /*
         UpdateLife(playerMovement.currentHealth);
+        */
 
     }
 

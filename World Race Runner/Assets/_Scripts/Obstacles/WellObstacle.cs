@@ -21,8 +21,8 @@ public class WellObstacle : EntityObstacle
     void Update()
     {
         MoveForward();
-        //transform.Translate(Vector3.left * speed * Time.deltaTime);
-        //transform.Rotate(Vector3.forward, gyroSpeed * Time.deltaTime);
+        /*transform.Translate(Vector3.left * speed * Time.deltaTime);*/
+        transform.Rotate(Vector3.forward, gyroSpeed * Time.deltaTime);
     }
 
     //private void Jump()
