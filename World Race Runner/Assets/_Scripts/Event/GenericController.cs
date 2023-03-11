@@ -8,7 +8,6 @@ public class GenericController : MonoBehaviour
 {
     public event Action OnMoveInput;
     public event Action OnJump;
-    //public event Action OnSceneLoseGame;
 
     public GenericModel m_model;
 
@@ -20,18 +19,15 @@ public class GenericController : MonoBehaviour
 
     private void Start()
     {
-        
     }
 
     private void Update()
     {
         Jump();
         Movement();
-
-
     }
 
-    void Jump() 
+    void Jump()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
@@ -44,14 +40,5 @@ public class GenericController : MonoBehaviour
         OnMoveInput?.Invoke();
     }
 
-
-    //void LoseGame()
-    //{
-    //OnSceneLoseGame?.Invoke();
-    //if (currentHealth == 0)
-    //{
-    //    LoseGame();
-    //}
-    //}
+    
 }
-

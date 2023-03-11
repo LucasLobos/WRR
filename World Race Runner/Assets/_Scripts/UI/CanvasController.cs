@@ -8,7 +8,6 @@ using UnityEngine.UI;
 public class CanvasController : MonoBehaviour
 {
     
-
     [SerializeField] private Sprite healtyHeart1,
         deadHeart1,
         healtyHeart2,
@@ -18,7 +17,7 @@ public class CanvasController : MonoBehaviour
 
     [SerializeField] private Image healhMeter1,healhMeter2,healhMeter3;
 
-    public PlayerStats player;
+    [SerializeField] private PlayerStats player;
     
     
     // Traer al player
@@ -28,7 +27,7 @@ public class CanvasController : MonoBehaviour
     
     private void Awake()
     {
-        var player = GetComponent<PlayerStats>();
+        var player = this.player.GetComponent<PlayerStats>();
 
         player.currentHealth = player.maxHealth;
 
@@ -36,9 +35,7 @@ public class CanvasController : MonoBehaviour
 
     private void Update()
     {
-
         UpdateLife(player.currentHealth);
-
     }
 
     private void UpdateLife(int currentLife)
