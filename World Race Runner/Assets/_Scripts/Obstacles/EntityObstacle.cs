@@ -7,7 +7,7 @@ public class EntityObstacle : MonoBehaviour
     [SerializeField] protected float speed;
     [SerializeField] protected int removeLife;
     protected float _currentTime;
-    [SerializeField] protected float impactTime = 0.1f;
+    [SerializeField] protected float impactTime = 0.2f;
 
     void Update()
     {
@@ -24,10 +24,10 @@ public class EntityObstacle : MonoBehaviour
     {
         _currentTime += Time.deltaTime;
 
-        if (_currentTime >= impactTime && collision.gameObject.TryGetComponent<PlayerMovement>(out var playerMovement))
+        if (_currentTime >= impactTime && collision.gameObject.TryGetComponent<PlayerStats>(out var player))
         {
             _currentTime = 0;
-            playerMovement.RemoveLife(removeLife);
+            player.RemoveLife(removeLife);
         }
     }
 }

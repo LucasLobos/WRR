@@ -18,7 +18,7 @@ public class CanvasController : MonoBehaviour
 
     [SerializeField] private Image healhMeter1,healhMeter2,healhMeter3;
 
-    [SerializeField] private PlayerMovement playerMovement;
+    public PlayerStats player;
     
     
     // Traer al player
@@ -27,37 +27,35 @@ public class CanvasController : MonoBehaviour
     // 0 3 corzones negro  = perdimos
     
     private void Awake()
-    { 
-        /*var playerMovement =  GetComponent<PlayerMovement>();*/
-        /*
-        playerMovement.currentHealth = playerMovement.maxHealth;
-    */
+    {
+        var player = GetComponent<PlayerStats>();
+
+        player.currentHealth = player.maxHealth;
+
     }
 
     private void Update()
     {
-        /*
-        UpdateLife(playerMovement.currentHealth);
-        */
+
+        UpdateLife(player.currentHealth);
 
     }
 
     private void UpdateLife(int currentLife)
     {
-        var isHealthy1 = playerMovement.currentHealth >= playerMovement.maxHealth;
+        var isHealthy1 = player.currentHealth >= player.maxHealth;
         healhMeter1.sprite = isHealthy1 ? healtyHeart1 : deadHeart1;
         
         
-        var isHealthy2 = playerMovement.currentHealth >= playerMovement.maxHealth - 99 ;
+        var isHealthy2 = player.currentHealth >= player.maxHealth - 99 ;
         healhMeter2.sprite = isHealthy2 ? healtyHeart2 : deadHeart2;
         
         
-        var isHealthy3 = playerMovement.currentHealth >= playerMovement.maxHealth - 149;
+        var isHealthy3 = player.currentHealth >= player.maxHealth - 149;
         healhMeter3.sprite = isHealthy3 ? healtyHeart3 : deadHeart3;
         
         
     }
-    
     
     
 }

@@ -229,6 +229,7 @@ MonoBehaviour:
   m_speed: 5
   m_jumpForce: 100
   m_rigibody: {fileID: 110273685}
+  currentHealth: 0
 --- !u!114 &110273689
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -242,6 +243,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_model: {fileID: 110273688}
+--- !u!114 &110273691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 110273681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4882aabfa1b58b54fa857b1b1095d9a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 150
+  currentHealth: 150
 --- !u!1 &151315173
 GameObject:
   m_ObjectHideFlags: 0
@@ -1336,7 +1351,7 @@ MonoBehaviour:
   healhMeter1: {fileID: 1534337667}
   healhMeter2: {fileID: 1886220639}
   healhMeter3: {fileID: 690350921}
-  playerMovement: {fileID: 0}
+  player: {fileID: 110273691}
 --- !u!1 &1279383191
 GameObject:
   m_ObjectHideFlags: 0
@@ -3121,6 +3136,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.x
       value: 34.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 6884574624563182455, guid: 3e4166a57c54ec04b91b78537ec5f428,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -12.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6884574624563182455, guid: 3e4166a57c54ec04b91b78537ec5f428,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6.17
       objectReference: {fileID: 0}
     - target: {fileID: 7577200824767721558, guid: 3e4166a57c54ec04b91b78537ec5f428,
         type: 3}

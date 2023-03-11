@@ -15,10 +15,10 @@ public class StoneObstacle : EntityObstacle
     {
         _currentTime += Time.deltaTime;
 
-        if (_currentTime >= impactTime && collision.gameObject.TryGetComponent<PlayerMovement>(out var playerMovement))
+        if (_currentTime >= impactTime && collision.gameObject.TryGetComponent<PlayerStats>(out var player))
         {
             _currentTime = 0;
-            playerMovement.RemoveLife(removeLife);
+            player.RemoveLife(removeLife);
             StoneExplosion();
         }
     }

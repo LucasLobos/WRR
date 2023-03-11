@@ -26,13 +26,9 @@ public class GenericController : MonoBehaviour
     private void Update()
     {
         Jump();
-        Movement(); 
+        Movement();
 
-        //OnSceneLoseGame?.Invoke();  
-        //if (currentHealth == 0)
-        //{
-        //    LoseGame();
-        //}
+
     }
 
     void Jump() 
@@ -41,7 +37,6 @@ public class GenericController : MonoBehaviour
         {
             OnJump?.Invoke();
         }
-
     }
 
     void Movement()
@@ -49,5 +44,14 @@ public class GenericController : MonoBehaviour
         OnMoveInput?.Invoke();
     }
 
+
+    //void LoseGame()
+    //{
+    //OnSceneLoseGame?.Invoke();
+    //if (currentHealth == 0)
+    //{
+    //    LoseGame();
+    //}
+    //}
 }
 

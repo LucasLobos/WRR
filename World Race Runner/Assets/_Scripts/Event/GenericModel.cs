@@ -10,6 +10,7 @@ public class GenericModel : MonoBehaviour
     [SerializeField] private float m_jumpForce;
     [SerializeField] private Rigidbody m_rigibody;
 
+
     private readonly float leftLanePosition = -4; // Posición del carril izquierdo en el eje X
     private readonly float middleLanePosition = -2; // Posición del carril medio en el eje X
     private readonly float rightLanePosition = 1; // Posición del carril derecho en el eje X
@@ -71,7 +72,8 @@ public class GenericModel : MonoBehaviour
         m_rigibody.AddForce(Vector3.up * m_jumpForce, ForceMode.Impulse);
         Debug.Log("Recived OnJump, from GenericController, to GenericModel");
     }
-    
+
+
     //public void OnSceneLoseGame()
     //{
     //    SceneManager.LoadScene("Lose");

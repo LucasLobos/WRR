@@ -1,35 +1,35 @@
 
-using UnityEngine;
-using UnityEngine.SceneManagement;
+//using UnityEngine;
+//using UnityEngine.SceneManagement;
 
 
-public class PlayerMovement : MonoBehaviour
-{
-    [SerializeField] private float speed;
+//public class PlayerMovement : MonoBehaviour
+//{
+//    [SerializeField] private float speed;
 
-    private Rigidbody rb;
-    [SerializeField] private float jumpHeight = 300;
-    [SerializeField] private bool grounded;
-    [SerializeField] private LayerMask mask;
-    [SerializeField] public int maxHealth;
-    [SerializeField] public int currentHealth;
+//    private Rigidbody rb;
+//    [SerializeField] private float jumpHeight = 300;
+//    [SerializeField] private bool grounded;
+//    [SerializeField] private LayerMask mask;
+//    [SerializeField] public int maxHealth;
+//    [SerializeField] public int currentHealth;
     
 
 
-    private void Start()
-    {
-        currentHealth = maxHealth;
-        rb = GetComponent<Rigidbody>();
-    }
+//    private void Start()
+//    {
+//        currentHealth = maxHealth;
+//        rb = GetComponent<Rigidbody>();
+//    }
 
-    private void Update()
-    {
+//    private void Update()
+//    {
         //var horizontal = Input.GetAxisRaw("Horizontal");
         //var direction = new Vector3(horizontal, 0, 0);
         
         //MoveHorizontal(direction);
         
-        CheckGround();
+        //CheckGround();
 
 
         //if (Input.GetKeyDown(KeyCode.Space) && grounded)
@@ -50,7 +50,7 @@ public class PlayerMovement : MonoBehaviour
         {
             maxSpeed();
         }*/
-    }
+    //}
 
     //private void MoveHorizontal(Vector3 moveHorizontal)
     //{
@@ -58,19 +58,19 @@ public class PlayerMovement : MonoBehaviour
         
     //}
 
-    private void CheckGround()
-    {
-        RaycastHit hitInfo = new RaycastHit();
+    //private void CheckGround()
+    //{
+    //    RaycastHit hitInfo = new RaycastHit();
 
-        if (Physics.Raycast(transform.position, -Vector3.up, out hitInfo, 0.6f, mask))
-        {
-            grounded = true;
-        }
-        else
-        {
-            grounded = false;
-        }
-    }
+    //    if (Physics.Raycast(transform.position, -Vector3.up, out hitInfo, 0.6f, mask))
+    //    {
+    //        grounded = true;
+    //    }
+    //    else
+    //    {
+    //        grounded = false;
+    //    }
+    //}
 
 
     //private void Jump()
@@ -78,25 +78,25 @@ public class PlayerMovement : MonoBehaviour
     //    rb.AddForce(Vector3.up * jumpHeight);
     //}
 
-    public void RemoveLife(int p_damage)
-    {
-        currentHealth -= p_damage;
-        if (currentHealth < 0)
-        {
-            currentHealth = 0;
-        }
+    //public void RemoveLife(int p_damage)
+    //{
+    //    currentHealth -= p_damage;
+    //    if (currentHealth < 0)
+    //    {
+    //        currentHealth = 0;
+    //    }
 
-    }
+    //}
     
-    public void ReceiveLife(int p_life)
-    {
-        currentHealth += p_life;
-        if (currentHealth > maxHealth)
-        {
-            currentHealth = maxHealth;
-        }
+    //public void ReceiveLife(int p_life)
+    //{
+    //    currentHealth += p_life;
+    //    if (currentHealth > maxHealth)
+    //    {
+    //        currentHealth = maxHealth;
+    //    }
 
-    }
+    //}
     
     //public void LoseGame()
     //{
@@ -104,5 +104,5 @@ public class PlayerMovement : MonoBehaviour
 
     //}
     
-}
+//}
     
