@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,13 +15,18 @@ public class EntityObstacle : MonoBehaviour
         MoveForward();
     }
 
+  /*private void Start()
+    {
+        Destroy(gameObject,5.00f);
+    }*/
+
     protected void MoveForward()
     {
         transform.position += transform.forward * (speed * Time.deltaTime);
     }
 
-
-    protected void OnCollisionStay(Collision collision)
+    
+    protected void OnCollisionEnter(Collision collision)
     {
         _currentTime += Time.deltaTime;
 

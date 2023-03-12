@@ -9,6 +9,7 @@ public class PlayerStats : MonoBehaviour
 
     [SerializeField] public int maxHealth;
     [SerializeField] public int currentHealth;
+   
 
     private void Update()
     {

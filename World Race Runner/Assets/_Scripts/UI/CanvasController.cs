@@ -51,7 +51,6 @@ public class CanvasController : MonoBehaviour
         var isHealthy3 = player.currentHealth >= player.maxHealth - 149;
         healhMeter3.sprite = isHealthy3 ? healtyHeart3 : deadHeart3;
         
-        
     }
     
     

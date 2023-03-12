@@ -31,7 +31,6 @@
         
         //CheckGround();
 
-
         //if (Input.GetKeyDown(KeyCode.Space) && grounded)
         //{
         //    Jump();

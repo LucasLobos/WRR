@@ -8,31 +8,27 @@ public class GenericController : MonoBehaviour
 {
     public event Action OnMoveInput;
     public event Action OnJump;
-
+    public event Action OnCheckGround;
+    public event Action OnSlide;
+    
     public GenericModel m_model;
-
-
+    
     private void Awake()
     {
         m_model.GetControllerRef(this);
     }
 
-    private void Start()
-    {
-    }
-
     private void Update()
     {
+        Slide();
+        CheckGround();
         Jump();
         Movement();
     }
 
     void Jump()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            OnJump?.Invoke();
-        }
+        OnJump?.Invoke();
     }
 
     void Movement()
@@ -40,5 +36,13 @@ public class GenericController : MonoBehaviour
         OnMoveInput?.Invoke();
     }
 
-    
+    void CheckGround()
+    {
+        OnCheckGround?.Invoke();
+    }
+
+    void Slide()
+    {
+        OnSlide?.Invoke();
+    }
 }

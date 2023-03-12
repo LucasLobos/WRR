@@ -318,7 +318,7 @@ PrefabInstance:
     - target: {fileID: 4817440432585934006, guid: 683c15f9e972f4655b2620101423b704,
         type: 3}
       propertyPath: m_Name
-      value: CarLights Variant 1
+      value: ObstacleCar
       objectReference: {fileID: 0}
     - target: {fileID: 4817440432585934006, guid: 683c15f9e972f4655b2620101423b704,
         type: 3}
@@ -423,7 +423,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!114 &2705018375242244283
 MonoBehaviour:
@@ -437,9 +437,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2116d83e9bcb567409409ded87830763, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
+  speed: 30
   removeLife: 50
-  impactTime: 0.1
+  impactTime: 0
 --- !u!4 &626932493768941185 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5301066753220271628, guid: 683c15f9e972f4655b2620101423b704,

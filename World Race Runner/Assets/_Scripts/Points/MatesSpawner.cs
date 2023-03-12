@@ -10,12 +10,13 @@ public class MatesSpawner : MonoBehaviour
     [SerializeField] private List<GameObject> objectsToSpawn = new List<GameObject>();
     public Vector3 spawnPosition;
     private float _spawnInterval;
-
+    private float _timeToDestroyPrefab = 5f;
 
     void SpawnRandomObject()
     {
         var index = Random.Range(0, objectsToSpawn.Count);
-        Instantiate(objectsToSpawn[index], spawnPosition, Quaternion.identity);
+        var gameObjectInstantiate =  Instantiate(objectsToSpawn[index], spawnPosition, Quaternion.identity);
+        Destroy(gameObjectInstantiate,_timeToDestroyPrefab);
     }
 
     private void Awake()

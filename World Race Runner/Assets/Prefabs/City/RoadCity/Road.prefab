@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 522540136679872325}
   - component: {fileID: 3526235946573830368}
   - component: {fileID: 1660495246245489706}
-  - component: {fileID: 7828840993064470603}
   m_Layer: 0
   m_Name: ROAD
   m_TagString: Untagged
@@ -87,19 +86,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &7828840993064470603
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 867998256511077887}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 12.1463995, y: 2.4883516, z: 12.146402}
-  m_Center: {x: 0, y: 1.2441748, z: 0}
 --- !u!1001 &1306642876386336736
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -107,9 +93,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 522540136679872325}
     m_Modifications:
+    - target: {fileID: 1224574634684750, guid: 2224b63330275e5478ef024b2913f937, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 1573730805894322, guid: 2224b63330275e5478ef024b2913f937, type: 3}
       propertyPath: m_Name
       value: Street 3 Prefab (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1573730805894322, guid: 2224b63330275e5478ef024b2913f937, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4040797355963638, guid: 2224b63330275e5478ef024b2913f937, type: 3}
       propertyPath: m_LocalScale.x
@@ -193,6 +187,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2224b63330275e5478ef024b2913f937, type: 3}
+--- !u!1 &1307866312853466798 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1224574634684750, guid: 2224b63330275e5478ef024b2913f937,
+    type: 3}
+  m_PrefabInstance: {fileID: 1306642876386336736}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &7701788135577621696
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1307866312853466798}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.020000009, y: 0.020000014, z: 1.273293e-13}
+  m_Center: {x: 0.000000007450581, y: 4.440893e-19, z: 0.0010000004}
 --- !u!4 &1311175711707542578 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4533943726500818, guid: 2224b63330275e5478ef024b2913f937,
@@ -206,9 +219,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 522540136679872325}
     m_Modifications:
+    - target: {fileID: 1224574634684750, guid: 2224b63330275e5478ef024b2913f937, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 1573730805894322, guid: 2224b63330275e5478ef024b2913f937, type: 3}
       propertyPath: m_Name
       value: Street 3 Prefab (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1573730805894322, guid: 2224b63330275e5478ef024b2913f937, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4040797355963638, guid: 2224b63330275e5478ef024b2913f937, type: 3}
       propertyPath: m_LocalScale.x
@@ -298,6 +319,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 6761815523290493839}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &6760627455878906561 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1224574634684750, guid: 2224b63330275e5478ef024b2913f937,
+    type: 3}
+  m_PrefabInstance: {fileID: 6761815523290493839}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &4374515382887080315
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6760627455878906561}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.020000009, y: 0.020000014, z: 1.273293e-13}
+  m_Center: {x: 0.000000007450581, y: -0.000000007450581, z: 0.0010000004}
 --- !u!1001 &6858651569535860614
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -305,9 +345,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 522540136679872325}
     m_Modifications:
+    - target: {fileID: 1224574634684750, guid: 2224b63330275e5478ef024b2913f937, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 1573730805894322, guid: 2224b63330275e5478ef024b2913f937, type: 3}
       propertyPath: m_Name
       value: Street 3 Prefab (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1573730805894322, guid: 2224b63330275e5478ef024b2913f937, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4040797355963638, guid: 2224b63330275e5478ef024b2913f937, type: 3}
       propertyPath: m_LocalScale.x
@@ -391,6 +439,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2224b63330275e5478ef024b2913f937, type: 3}
+--- !u!1 &6857446201995153096 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1224574634684750, guid: 2224b63330275e5478ef024b2913f937,
+    type: 3}
+  m_PrefabInstance: {fileID: 6858651569535860614}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &3321992748667824508
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6857446201995153096}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.020000009, y: 0.020000014, z: 1.273293e-13}
+  m_Center: {x: 0.000000007450581, y: 4.440893e-19, z: 0.0009995236}
 --- !u!4 &6863143722958443604 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4533943726500818, guid: 2224b63330275e5478ef024b2913f937,
