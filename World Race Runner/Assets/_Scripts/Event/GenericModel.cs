@@ -112,17 +112,21 @@ public class GenericModel : MonoBehaviour
     //-------------------------SLIDE----------------------------------
     public IEnumerator Slide()
     {
+        
         Vector3 originalSizeCollider = m_collider.transform.localScale;
+        
         _animator.SetBool("IsSliding",true);
         _canSlide = false;
-        Vector3 newCollider = new Vector3(transform.localScale.x, transform.localScale.y * 0.8f, transform.localScale.z);
+        Vector3 newCollider = new Vector3(transform.localScale.x, transform.localScale.y * 0.9f, transform.localScale.z);
         m_collider.transform.localScale = newCollider;
         
         yield return new WaitForSeconds(_slideTime);
         _canSlide = true;
         _animator.SetBool("IsSliding",false);
         
+        
         m_collider.transform.localScale = originalSizeCollider;
+        
 
     }
     public void OnSlideHanlder()
