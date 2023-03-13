@@ -438,7 +438,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 30
-  removeLife: 50
+  removeLife: 100
   impactTime: 0
 --- !u!4 &626932493768941185 stripped
 Transform:

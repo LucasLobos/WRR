@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 20
-  removeLife: 50
+  removeLife: 100
   impactTime: 0.2
 --- !u!54 &8925870287025219669
 Rigidbody:

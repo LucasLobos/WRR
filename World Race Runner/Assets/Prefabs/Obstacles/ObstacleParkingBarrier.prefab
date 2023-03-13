@@ -97,8 +97,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.002478077, y: 0.0017419098, z: 0.008814189}
-  m_Center: {x: 0.0014254776, y: 0.0025437714, z: 0.0044070967}
+  m_Size: {x: 0.0024780778, y: 0.00349696, z: 0.008569216}
+  m_Center: {x: 0.0014254771, y: 0.0016662466, z: 0.0042846105}
 --- !u!1 &5459148098336679826
 GameObject:
   m_ObjectHideFlags: 0
@@ -197,8 +197,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.0005966252, y: 0.019350389, z: 0.0001538568}
-  m_Center: {x: -0.0001399144, y: -0.0079475865, z: 0.00045260554}
+  m_Size: {x: 0.0009067987, y: 0.019350385, z: 0.0017044949}
+  m_Center: {x: -0.00029499747, y: -0.007947593, z: 0.0014804134}
 --- !u!1 &5459752438691491458
 GameObject:
   m_ObjectHideFlags: 0
@@ -226,7 +226,7 @@ Transform:
   m_GameObject: {fileID: 5459752438691491458}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -2.43, y: 7.1835365, z: 53.28}
-  m_LocalScale: {x: 1.5091287, y: 1.5091287, z: 1.5091287}
+  m_LocalScale: {x: 1.5091287, y: 1.7705098, z: 1.5091287}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5464710362058698912}
@@ -246,7 +246,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 20
-  removeLife: 50
+  removeLife: 100
   impactTime: 0
 --- !u!54 &-2834686544459798659
 Rigidbody:

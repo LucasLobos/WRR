@@ -30,7 +30,7 @@ public class PlayerStats : MonoBehaviour
     
     public void SceneLoseGame()
     {
-        SceneManager.LoadScene("Lose");
+        SceneManager.LoadScene("GameOver");
         Debug.Log("Recived OnSceneLoseGame, from GenericController, to GenericModel");
     }
 }

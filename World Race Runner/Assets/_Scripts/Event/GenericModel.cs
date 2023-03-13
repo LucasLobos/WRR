@@ -4,33 +4,31 @@ using Unity.VisualScripting;
 using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 
 public class GenericModel : MonoBehaviour
 {
     private Animator _animator;
-    private Camera playerCamera;
+    [SerializeField] private Rigidbody m_rigidbody;
+    [SerializeField] private Collider m_collider;
     
     [Header("Jump")]
     [SerializeField] private float m_jumpForce;
-    [SerializeField] private Rigidbody m_rigibody;
     [SerializeField] private bool grounded = true;
     [SerializeField] private LayerMask mask;
     private bool _isJumping;
-    
     
     [Header("Slide")]
     [SerializeField]private float _slideTime;
     private float _initialGravity;
     private bool _canSlide = true;
-    [SerializeField] private TrailRenderer _trailRenderer;
-    
+
     [Header("Movement")]
     private  float leftLanePosition = -4.4f; // Posición del carril izquierdo en el eje X
     private  float middleLanePosition = -1.8f; // Posición del carril medio en el eje X
     private  float rightLanePosition = 0.9f; // Posición del carril derecho en el eje X
     private float currentXPosition; // Posición actual del personaje en el eje X
-
-
+    
     
     public void GetControllerRef(GenericController p_controller)
     {
@@ -43,8 +41,8 @@ public class GenericModel : MonoBehaviour
 
     private void Start()
     {
+        m_collider = GetComponent<Collider>();
         _animator = GetComponent<Animator>();
-        playerCamera = GetComponentInChildren<Camera>();
         currentXPosition = middleLanePosition;
         transform.position = new Vector3(currentXPosition, transform.position.y, transform.position.z);
     }
@@ -91,13 +89,10 @@ public class GenericModel : MonoBehaviour
         {
             _animator.SetBool("IsJumping",true);
             _isJumping = true;
-            m_rigibody.AddForce(Vector3.up * m_jumpForce, ForceMode.Impulse);
+            m_rigidbody.AddForce(Vector3.up * m_jumpForce, ForceMode.Impulse);
             Debug.Log("Recived OnJump, from GenericController, to GenericModel");
         }
     }
-
-
-
     private void OnCheckGroundHandler()
     {
         RaycastHit hitInfo = new RaycastHit();
@@ -114,27 +109,28 @@ public class GenericModel : MonoBehaviour
             
         }
     }
-    
     //-------------------------SLIDE----------------------------------
     public IEnumerator Slide()
     {
-        _animator.SetTrigger("IsSliding");
-        _trailRenderer.emitting = true;
+        Vector3 originalSizeCollider = m_collider.transform.localScale;
+        _animator.SetBool("IsSliding",true);
         _canSlide = false;
-        /*playerCamera.transform.position = new Vector3(-0.04300332f, 1.178f, -3.61f); */   //(-0.128844023, 1.07433367, -3.85811424);
+        Vector3 newCollider = new Vector3(transform.localScale.x, transform.localScale.y * 0.8f, transform.localScale.z);
+        m_collider.transform.localScale = newCollider;
+        
         yield return new WaitForSeconds(_slideTime);
-
-        /*
-        playerCamera.transform.position = new Vector3(-0.04300332f, 2.66f, -7.195f);
-        */
         _canSlide = true;
-        _trailRenderer.emitting = false;
+        _animator.SetBool("IsSliding",false);
+        
+        m_collider.transform.localScale = originalSizeCollider;
+
     }
     public void OnSlideHanlder()
     {
         if (Input.GetKeyDown(KeyCode.S) && _canSlide)
         {
             StartCoroutine(Slide());
+
         }
     }
 }
