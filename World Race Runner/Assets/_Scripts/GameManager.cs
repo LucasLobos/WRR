@@ -1,10 +1,12 @@
+using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
     public bool dontDestroyOnLoad;
-    [SerializeField] private float timeElapsed = 0;
+
     
     private void Awake()
     {
@@ -23,20 +25,38 @@ public class GameManager : MonoBehaviour
         }
     }
     
-    void Update()
+    
+    
+    public void QuitGame()
     {
-        GameTime();
+        Application.Quit();
     }
     
-    public void GameTime()
+    public void BackToMenu()
     {
-        timeElapsed += Time.deltaTime;
-        /*Debug.Log("Time Game " + timeElapsed);*/
+        SceneManager.LoadScene("Start");
+    }
+    
+    public void RestartGame()
+    {
+        SceneManager.LoadScene("World");
+    }
+
+    public void TutorialGame()
+    {
+        SceneManager.LoadScene("Tutorial");
     }
     
     
     
-
-
-
+    //Puntuacion del jugador
+    
+    public void TotalPoints(){
+        
+        
+        
+    }
+    
+    
+    //Gestion Musica y efectos de sonido
 }

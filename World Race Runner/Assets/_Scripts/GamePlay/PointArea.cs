@@ -1,56 +1,100 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
 public enum ColorState
 {
-    Normal,
-    Red,
-    Green
+    Normal = 10,
+    Red = 20,
+    Green = 30
 }
+
+
 
 public class PointArea : MonoBehaviour
 {
-    [SerializeField] private ColorState currentColor;
+    [SerializeField] private Enum StateColor;
+    
+    public int pointsMateNormal = 10;
+    public int pointsMateRed = 20;
+    public int pointsMateGreen = 30;
+    
+     private int totalPoints = 0;
 
-    private int _points = 0;
-    /*
-    private int _totalPoints = 0;
-    */
-
-
+     
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            
-            /*GameManager manager = GameManager.instance;
-            manager.AddPoints();*/
-            AddSkills();
             AddPoints();
             Destroy(gameObject, 0.2f);
         }
     }
-    
+
     private void AddPoints()
     {
-        switch (currentColor)
+        switch (StateColor)
         {
             case ColorState.Green:
-                _points += 3;
+                totalPoints += 30;
                 break;
 
             case ColorState.Red:
-                _points += 2;
+                totalPoints += 20;
                 break;
 
             case ColorState.Normal:
-                _points += 1;
+                totalPoints += 10;
                 break;
         }
-
-        Debug.Log($"Contando puntos {_points}");
+            
     }
+    
 
+ 
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     private void AddSkills()
     {
         Dictionary<string, int> skill = new Dictionary<string, int>();
@@ -64,7 +108,7 @@ public class PointArea : MonoBehaviour
             Debug.Log("La clave existe");
         }
 
-        foreach (KeyValuePair<string,int> element in skill)
+        foreach (KeyValuePair<string, int> element in skill)
         {
             Debug.Log("Clave: " + element.Key + "Valor: " + element.Value);
         }

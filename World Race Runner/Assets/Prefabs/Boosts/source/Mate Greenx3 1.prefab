@@ -80,7 +80,7 @@ PrefabInstance:
     - target: {fileID: 763545481775400163, guid: 9dbbeebd665b85e43882a6f54b11c5cf,
         type: 3}
       propertyPath: m_Name
-      value: Mate Greenx3
+      value: Mate Greenx3 1
       objectReference: {fileID: 0}
     - target: {fileID: 763545481775400163, guid: 9dbbeebd665b85e43882a6f54b11c5cf,
         type: 3}
@@ -99,8 +99,18 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: f5ac664de8c886f4da337a57225189a7, type: 2}
     - target: {fileID: 2933782386308539912, guid: 9dbbeebd665b85e43882a6f54b11c5cf,
         type: 3}
+      propertyPath: puntos
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 2933782386308539912, guid: 9dbbeebd665b85e43882a6f54b11c5cf,
+        type: 3}
       propertyPath: currentColor
-      value: 2
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 2933782386308539912, guid: 9dbbeebd665b85e43882a6f54b11c5cf,
+        type: 3}
+      propertyPath: tipoDePuntuacion
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3285563495955901566, guid: 9dbbeebd665b85e43882a6f54b11c5cf,
         type: 3}

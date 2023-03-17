@@ -25,8 +25,18 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 4890916974586227775, guid: 5739c53ce807a45419bf0010a8c5f8e0,
         type: 3}
+      propertyPath: puntos
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4890916974586227775, guid: 5739c53ce807a45419bf0010a8c5f8e0,
+        type: 3}
       propertyPath: currentColor
-      value: 1
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4890916974586227775, guid: 5739c53ce807a45419bf0010a8c5f8e0,
+        type: 3}
+      propertyPath: tipoDePuntuacion
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 4990170914500598619, guid: 5739c53ce807a45419bf0010a8c5f8e0,
         type: 3}
@@ -41,7 +51,7 @@ PrefabInstance:
     - target: {fileID: 7047654080818695892, guid: 5739c53ce807a45419bf0010a8c5f8e0,
         type: 3}
       propertyPath: m_Name
-      value: Mate Redx2
+      value: Mate Redx2 1
       objectReference: {fileID: 0}
     - target: {fileID: 7047654080818695892, guid: 5739c53ce807a45419bf0010a8c5f8e0,
         type: 3}

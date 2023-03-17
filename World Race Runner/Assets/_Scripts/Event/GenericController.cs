@@ -10,9 +10,9 @@ public class GenericController : MonoBehaviour
     public event Action OnJump;
     public event Action OnCheckGround;
     public event Action OnSlide;
-    
+
     public GenericModel m_model;
-    
+
     private void Awake()
     {
         m_model.GetControllerRef(this);
@@ -20,9 +20,17 @@ public class GenericController : MonoBehaviour
 
     private void Update()
     {
-        Slide();
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            Slide();
+        }
+
         CheckGround();
-        Jump();
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Jump();
+        }
+
         Movement();
     }
 

@@ -9,16 +9,24 @@ public class StartButton : MonoBehaviour
 {
 
     [SerializeField] private Button startButton;
+    [SerializeField] private Button tutorialButton;
+    [SerializeField] private Button quitButton;
+
+    public GameManager gameManager;
 
 
     private void Awake()
     {
-        startButton.onClick.AddListener(LoadGame);
+        gameManager = GameManager.instance;
     }
+
     
     
-    public void LoadGame()
+    private void Start()
     {
-        SceneManager.LoadScene("World");
+        startButton.onClick.AddListener(gameManager.RestartGame);
+        tutorialButton.onClick.AddListener(gameManager.TutorialGame);
+        quitButton.onClick.AddListener(gameManager.QuitGame);
+
     }
 }

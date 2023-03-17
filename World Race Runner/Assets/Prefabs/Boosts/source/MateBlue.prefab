@@ -90,7 +90,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 2807d363d5468c84b8f042d3a0886b6e,
         type: 3}
       propertyPath: m_Name
-      value: Mate Variant (1)
+      value: MateBlue
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2807d363d5468c84b8f042d3a0886b6e,
         type: 3}
@@ -158,4 +158,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bf69032463b6d243ab37cfd732bbb4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentColor: 0
+  currentColor: 10

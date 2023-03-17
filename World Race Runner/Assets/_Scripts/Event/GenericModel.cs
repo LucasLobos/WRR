@@ -85,13 +85,15 @@ public class GenericModel : MonoBehaviour
     //-------------------------JUMP----------------------------------
     public void OnJumpHandler()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && grounded)
+        if (grounded)
         {
-            _animator.SetBool("IsJumping",true);
+            _animator.SetBool("IsJumping", true);
             _isJumping = true;
             m_rigidbody.AddForce(Vector3.up * m_jumpForce, ForceMode.Impulse);
             Debug.Log("Recived OnJump, from GenericController, to GenericModel");
+            
         }
+        
     }
     private void OnCheckGroundHandler()
     {
@@ -106,7 +108,6 @@ public class GenericModel : MonoBehaviour
         else
         {
             grounded = false;
-            
         }
     }
     //-------------------------SLIDE----------------------------------
@@ -131,10 +132,14 @@ public class GenericModel : MonoBehaviour
     }
     public void OnSlideHanlder()
     {
-        if (Input.GetKeyDown(KeyCode.S) && _canSlide)
+        if (_canSlide)
         {
             StartCoroutine(Slide());
 
         }
     }
+    
+    
+    
+    
 }
