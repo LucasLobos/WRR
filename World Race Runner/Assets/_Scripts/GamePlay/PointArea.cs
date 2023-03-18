@@ -1,100 +1,54 @@
-using System;
 using System.Collections.Generic;
 using UnityEngine;
 
 public enum ColorState
 {
-    Normal = 10,
-    Red = 20,
-    Green = 30
+    Blue,
+    Red,
+    Green
 }
-
-
 
 public class PointArea : MonoBehaviour
 {
-    [SerializeField] private Enum StateColor;
-    
-    public int pointsMateNormal = 10;
-    public int pointsMateRed = 20;
-    public int pointsMateGreen = 30;
-    
-     private int totalPoints = 0;
+    [SerializeField] private int pointsMateBlue = 100;
+    [SerializeField] private int pointsMateRed = 200;
+    [SerializeField] private int pointsMateGreen = 300;
+    [SerializeField] private ColorState colorMate;
+    private GameManager _gameManager;
 
-     
+
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
         {
             AddPoints();
-            Destroy(gameObject, 0.2f);
         }
+    }
+    private void Awake()
+    {
+        _gameManager = GameManager.instance;
+        
     }
 
     private void AddPoints()
     {
-        switch (StateColor)
+        switch (colorMate)
         {
             case ColorState.Green:
-                totalPoints += 30;
+                _gameManager.UpdatePoints(pointsMateGreen);
                 break;
 
             case ColorState.Red:
-                totalPoints += 20;
+                _gameManager.UpdatePoints(pointsMateRed);
                 break;
 
-            case ColorState.Normal:
-                totalPoints += 10;
+            case ColorState.Blue:
+                _gameManager.UpdatePoints(pointsMateBlue);
                 break;
         }
-            
+        Destroy(gameObject, 0.5f);
     }
-    
 
  
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     private void AddSkills()
     {
         Dictionary<string, int> skill = new Dictionary<string, int>();

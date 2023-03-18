@@ -158,4 +158,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bf69032463b6d243ab37cfd732bbb4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentColor: 10
+  pointsMateBlue: 100
+  pointsMateRed: 200
+  pointsMateGreen: 300
+  _colorMate: 0
+  gameManager: {fileID: 0}

@@ -1,4 +1,5 @@
 using System;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -6,7 +7,9 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
     public bool dontDestroyOnLoad;
-
+    [SerializeField] private TMP_Text scoreGame;
+    private static int _totalPoints = 0;
+    
     
     private void Awake()
     {
@@ -25,7 +28,11 @@ public class GameManager : MonoBehaviour
         }
     }
     
-    
+    public void UpdatePoints(int points)
+    {
+        _totalPoints += points;
+        scoreGame.text = "SCORE : " + _totalPoints;
+    }
     
     public void QuitGame()
     {
@@ -51,11 +58,7 @@ public class GameManager : MonoBehaviour
     
     //Puntuacion del jugador
     
-    public void TotalPoints(){
-        
-        
-        
-    }
+  
     
     
     //Gestion Musica y efectos de sonido
