@@ -1868,7 +1868,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 110273691}
   timeGame: {fileID: 334186507}
-  scoreGame: {fileID: 0}
+  scoreGame: {fileID: 151315175}
   healhMeter1: {fileID: 1534337667}
   healtyHeart1: {fileID: 21300000, guid: bae3f3b5f602e1c4f848a063aefd0308, type: 3}
   deadHeart1: {fileID: 21300000, guid: 045e1fc398cbe0144b4b63c70ce25ea0, type: 3}
@@ -3794,6 +3794,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dontDestroyOnLoad: 0
   scoreGame: {fileID: 151315175}
+  canvasController: {fileID: 1215270548}
 --- !u!4 &2097086473
 Transform:
   m_ObjectHideFlags: 0

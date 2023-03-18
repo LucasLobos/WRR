@@ -10,23 +10,24 @@ public enum ColorState
 
 public class PointArea : MonoBehaviour
 {
-    [SerializeField] private int pointsMateBlue = 100;
-    [SerializeField] private int pointsMateRed = 200;
-    [SerializeField] private int pointsMateGreen = 300;
+    [SerializeField] private int pointsMateBlue = 10;
+    [SerializeField] private int pointsMateRed = 20;
+    [SerializeField] private int pointsMateGreen = 30;
     [SerializeField] private ColorState colorMate;
     private GameManager _gameManager;
 
 
     private void OnTriggerEnter(Collider other)
     {
+        if (other.CompareTag("Player"))
         {
             AddPoints();
         }
     }
+
     private void Awake()
     {
         _gameManager = GameManager.instance;
-        
     }
 
     private void AddPoints()
@@ -45,11 +46,13 @@ public class PointArea : MonoBehaviour
                 _gameManager.UpdatePoints(pointsMateBlue);
                 break;
         }
-        Destroy(gameObject, 0.5f);
+        
+        Destroy(gameObject, 0.2f);
+    
     }
 
- 
-    private void AddSkills()
+
+    /*private void AddSkills()
     {
         Dictionary<string, int> skill = new Dictionary<string, int>();
         skill.Add("modeGod", 10);
@@ -65,11 +68,11 @@ public class PointArea : MonoBehaviour
         foreach (KeyValuePair<string, int> element in skill)
         {
             Debug.Log("Clave: " + element.Key + "Valor: " + element.Value);
-        }
+        }*/
         // Saber cuantos Mates Verdes se consumio el personaje y si tiene + de 10 mates verdes, posibilidad de usar
         //el skill de inmortal con la letra "F"
 
         // Saber cuantos Mates Verdes se consumio el personaje y si tiene + de 8 mates rojos, posibilidad de usar
         //el skill de maxSpeed con la letra "G"
-    }
+    //}
 }
