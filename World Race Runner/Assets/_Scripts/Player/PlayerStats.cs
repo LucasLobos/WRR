@@ -1,6 +1,4 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -15,7 +13,10 @@ public class PlayerStats : MonoBehaviour
     {
         if (currentHealth <= 0)
         {
+            Time.timeScale = 0;
+            
             SceneLoseGame();
+        
         }
     }
 
