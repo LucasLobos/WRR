@@ -3469,7 +3469,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 397fd594f9b5a8542ae0a3d0dc35b075, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dontDestroyOnLoad: 0
+  dontDestroyOnLoad: 1
   totalPoints: 0
   elapsedTime: 0
   lastTime: 0

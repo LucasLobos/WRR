@@ -55,6 +55,16 @@ public class GameManager : MonoBehaviour
         
     }
 
+    public int GetPoint()
+    {
+        return totalPoints;
+    }
+
+    public float GetTime()
+    {
+        return elapsedTime;
+    }
+
     //------------------------Scene swaps
     public void QuitGame()
     {

@@ -9,9 +9,10 @@ public class GameOver : MonoBehaviour
     [Header("Buttons")]
     [SerializeField] private Button restartButton;
     [SerializeField] private Button backToMenu;
-    
+    [SerializeField] private CanvasController canvasController;
+
     [Header("GameManager")]
-    public GameManager gameManager;
+    private GameManager gameManager;
     
     private void Awake()
     {
@@ -20,10 +21,20 @@ public class GameOver : MonoBehaviour
 
     private void Start()
     {
-        
-        
         restartButton.onClick.AddListener(gameManager.RestartGame);
         backToMenu.onClick.AddListener(gameManager.BackToMenu);
+        SetPoint();
+        SetTime();
+    }
+     
+
+    private void SetPoint()
+    {
+        canvasController.ShowScore(gameManager.GetPoint());
     }
 
+    private void SetTime()
+    {
+        canvasController.ShowTime(gameManager.GetTime());
+    }
 }
