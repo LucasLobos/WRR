@@ -1,7 +1,5 @@
-using System;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class CanvasController : MonoBehaviour
 {
@@ -19,3 +17,4 @@ public class CanvasController : MonoBehaviour
         timeGame.text = "TIME : " + time.ToString("0.0");
     }
 }
+

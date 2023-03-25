@@ -1,7 +1,5 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.Serialization;
-
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
@@ -12,11 +10,8 @@ public class GameManager : MonoBehaviour
     [Header("Game Time")] public float elapsedTime = 0.0f;
     public float lastTime = 0.0f;
     
-    
-    
     [SerializeField] private CanvasController canvasController;
-    
-    
+
     private void Awake()
     {
         if (instance == null)
@@ -55,7 +50,7 @@ public class GameManager : MonoBehaviour
         
     }
 
-    public int GetPoint()
+    public int GetPoints()
     {
         return totalPoints;
     }
@@ -85,10 +80,7 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene("Tutorial");
     }
-
-    public void NextLevelSnow()
-    {
-    }
+    
 
     //Gestion Musica y efectos de sonido
 }

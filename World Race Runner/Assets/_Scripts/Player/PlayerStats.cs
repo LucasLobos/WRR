@@ -1,22 +1,18 @@
-
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class PlayerStats : MonoBehaviour
 {
-
     [SerializeField] public int maxHealth;
     [SerializeField] public int currentHealth;
-   
+
 
     private void Update()
     {
         if (currentHealth <= 0)
         {
             Time.timeScale = 0;
-            
             SceneLoseGame();
-        
         }
     }
 
@@ -28,10 +24,9 @@ public class PlayerStats : MonoBehaviour
             currentHealth = 0;
         }
     }
-    
+
     public void SceneLoseGame()
     {
         SceneManager.LoadScene("GameOver");
-        Debug.Log("Recived OnSceneLoseGame, from GenericController, to GenericModel");
     }
 }

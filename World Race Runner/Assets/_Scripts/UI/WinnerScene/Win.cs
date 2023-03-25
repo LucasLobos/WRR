@@ -1,11 +1,11 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class GameOver : MonoBehaviour
+public class Win : MonoBehaviour
 {
 
     [Header("Buttons")]
-    [SerializeField] private Button backToMenu;
+    [SerializeField] private Button menuButton;
     [SerializeField] private CanvasController canvasController;
 
     [Header("GameManager")]
@@ -18,8 +18,7 @@ public class GameOver : MonoBehaviour
 
     private void Start()
     {
-
-        backToMenu.onClick.AddListener(gameManager.BackToMenu);
+        menuButton.onClick.AddListener(gameManager.BackToMenu);
         SetPoint();
         SetTime();
     }
@@ -35,6 +34,5 @@ public class GameOver : MonoBehaviour
         canvasController.ShowTime(gameManager.GetTime());
     }
 
-
-    
+  
 }
