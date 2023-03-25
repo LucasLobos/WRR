@@ -35,7 +35,7 @@ public class PlayerStats : MonoBehaviour
 
     public void SceneLoseGame()
     {
-        gameManager.GameOver();
+        SceneManager.LoadScene("GameOver");
     }
 
 
