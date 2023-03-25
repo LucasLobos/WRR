@@ -162,3 +162,5 @@ MonoBehaviour:
   pointsMateRed: 20
   pointsMateGreen: 30
   colorMate: 2
+  collect1: {fileID: 8300000, guid: e0f305e28b7e87545a61a05f03929261, type: 3}
+  collect2: {fileID: 8300000, guid: afb9db9b07d653f4a8831eae1e5defc0, type: 3}

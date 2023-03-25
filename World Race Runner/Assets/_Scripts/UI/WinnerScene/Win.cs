@@ -22,17 +22,11 @@ public class Win : MonoBehaviour
         SetPoint();
        
     }
-     
-
+    
     private void SetPoint()
     {
         canvasController.ShowScore(gameManager.GetPoints());
     }
-
-    //private void SetTime()
-    //{
-    //    canvasController.ShowTime(gameManager.GetTime());
-    //}
 
   
 }

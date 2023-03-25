@@ -30,11 +30,6 @@ public class GameOver : MonoBehaviour
         canvasController.ShowScore(gameManager.GetPoints());
     }
 
-    //private void SetTime()
-    //{
-    //    canvasController.ShowTime(gameManager.GetTime());
-    //}
-
 
     
 }

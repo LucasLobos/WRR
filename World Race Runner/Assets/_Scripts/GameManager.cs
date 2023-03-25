@@ -7,25 +7,7 @@ public class GameManager : MonoBehaviour
 
     [Header("Final points")] public int totalPoints = 0;
 
-    //[Header("Game Time")] public float elapsedTime = 0.0f;
-    //public float lastTime = 0.0f;
-    //private void Update()
-    //{
-    //    elapsedTime += Time.deltaTime;
-    //    ControlTime(elapsedTime);
-    //}
-
-
-    //public void ControlTime(float time)
-    //{
-    //    lastTime = time;
-    //    canvasController.ShowTime(lastTime);
-    //}
-
-    //public float GetTime()
-    //{
-    //    return elapsedTime;
-    //}
+ 
     [SerializeField] private CanvasController canvasController;
 
     private void Awake()
@@ -81,7 +63,4 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("Tutorial");
     }
 
-  
-
-    //Gestion Musica y efectos de sonido
 }
