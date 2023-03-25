@@ -20,7 +20,7 @@ public class Win : MonoBehaviour
     {
         menuButton.onClick.AddListener(gameManager.BackToMenu);
         SetPoint();
-        SetTime();
+       
     }
      
 
@@ -29,10 +29,10 @@ public class Win : MonoBehaviour
         canvasController.ShowScore(gameManager.GetPoints());
     }
 
-    private void SetTime()
-    {
-        canvasController.ShowTime(gameManager.GetTime());
-    }
+    //private void SetTime()
+    //{
+    //    canvasController.ShowTime(gameManager.GetTime());
+    //}
 
   
 }

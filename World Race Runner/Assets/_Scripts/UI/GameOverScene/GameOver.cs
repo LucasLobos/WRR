@@ -21,7 +21,7 @@ public class GameOver : MonoBehaviour
 
         backToMenu.onClick.AddListener(gameManager.BackToMenu);
         SetPoint();
-        SetTime();
+       
     }
      
 
@@ -30,10 +30,10 @@ public class GameOver : MonoBehaviour
         canvasController.ShowScore(gameManager.GetPoints());
     }
 
-    private void SetTime()
-    {
-        canvasController.ShowTime(gameManager.GetTime());
-    }
+    //private void SetTime()
+    //{
+    //    canvasController.ShowTime(gameManager.GetTime());
+    //}
 
 
     

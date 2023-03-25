@@ -451,7 +451,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e15bd41ae7f70284b8214e37a7a785e7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d96b00d927b63d644b9af71dc8c4eab2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -499,6 +499,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dontDestroyOnLoad: 0
+  totalPoints: 0
+  elapsedTime: 0
+  lastTime: 0
+  canvasController: {fileID: 0}
 --- !u!4 &302467033
 Transform:
   m_ObjectHideFlags: 0
@@ -590,7 +594,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.23137257, g: 0.03529412, b: 0.10588236, a: 1}
+  m_Color: {r: 0.03529411, g: 0.23137255, b: 0.18712057, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1130,7 +1134,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.23137257, g: 0.03529412, b: 0.10588236, a: 1}
+  m_Color: {r: 0.04705883, g: 0.28235295, b: 0.23137257, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1252,7 +1256,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.23137257, g: 0.03529412, b: 0.10588236, a: 1}
+  m_Color: {r: 0.04705883, g: 0.28235295, b: 0.23137257, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

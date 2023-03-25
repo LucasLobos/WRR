@@ -7,8 +7,8 @@ public class GameManager : MonoBehaviour
 
     [Header("Final points")] public int totalPoints = 0;
 
-    [Header("Game Time")] public float elapsedTime = 0.0f;
-    public float lastTime = 0.0f;
+    //[Header("Game Time")] public float elapsedTime = 0.0f;
+    //public float lastTime = 0.0f;
     
     [SerializeField] private CanvasController canvasController;
 
@@ -29,18 +29,18 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void Update()
-    {
-        elapsedTime += Time.deltaTime;
-        ControlTime(elapsedTime);
-    }
+    //private void Update()
+    //{
+    //    elapsedTime += Time.deltaTime;
+    //    ControlTime(elapsedTime);
+    //}
 
 
-    public void ControlTime(float time)
-    {
-        lastTime = time;
-        canvasController.ShowTime(lastTime);
-    }
+    //public void ControlTime(float time)
+    //{
+    //    lastTime = time;
+    //    canvasController.ShowTime(lastTime);
+    //}
 
     //------------------ Points
     public void UpdatePoints(int points)
@@ -55,10 +55,10 @@ public class GameManager : MonoBehaviour
         return totalPoints;
     }
 
-    public float GetTime()
-    {
-        return elapsedTime;
-    }
+    //public float GetTime()
+    //{
+    //    return elapsedTime;
+    //}
 
     //------------------------Scene swaps
     public void QuitGame()
@@ -80,7 +80,11 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene("Tutorial");
     }
-    
+
+    public void GameOver()
+    {
+        SceneManager.LoadScene("GameOver");
+    }
 
     //Gestion Musica y efectos de sonido
 }
