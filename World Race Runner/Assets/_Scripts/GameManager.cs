@@ -55,12 +55,29 @@ public class GameManager : MonoBehaviour
 
     public void RestartGame()
     {
-        SceneManager.LoadScene("World");
+        SceneManager.LoadScene("World 1");
     }
 
     public void TutorialGame()
     {
-        SceneManager.LoadScene("Tutorial");
+        SceneManager.LoadScene("Tuto&VolumeControl");
+    }
+    public void Levels()
+    {
+        SceneManager.LoadScene("Levels");
+    }
+    
+    public void LevelFarm()
+    {
+        SceneManager.LoadScene("Word 1");
+    }
+    public void LevelCity()
+    {
+        SceneManager.LoadScene("World 2");
+    }
+    public void LevelSpace()
+    {
+        SceneManager.LoadScene("World 3");
     }
 
 }

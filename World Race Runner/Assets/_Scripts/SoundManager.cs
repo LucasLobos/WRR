@@ -2,9 +2,9 @@
 using System;
 using UnityEngine;
 
-public class SoundController : MonoBehaviour
+public class SoundManager : MonoBehaviour
 {
-    public static SoundController instance;
+    public static SoundManager instance;
 
     private AudioSource _audioSource;
 

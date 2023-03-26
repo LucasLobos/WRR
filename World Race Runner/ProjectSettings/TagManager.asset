@@ -11,6 +11,7 @@ TagManager:
   - Well
   - Restart
   - Quit
+  - Bouncy
   layers:
   - Default
   - TransparentFX
@@ -28,7 +29,7 @@ TagManager:
   - Restart
   - Quit
   - ObstaclesOnGame
-  - 
+  - Bouncy
   - 
   - 
   - 

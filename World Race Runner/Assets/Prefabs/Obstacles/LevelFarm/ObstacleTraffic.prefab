@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5310045549484485843}
   - component: {fileID: 5260461299932241207}
   - component: {fileID: 5279864763077813067}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: traffic_obj
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -123,7 +123,7 @@ GameObject:
   - component: {fileID: 5328925462764712059}
   - component: {fileID: -6895374587225613977}
   - component: {fileID: -5524218737531977017}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ObstacleTraffic
   m_TagString: Obstacle
   m_Icon: {fileID: 0}

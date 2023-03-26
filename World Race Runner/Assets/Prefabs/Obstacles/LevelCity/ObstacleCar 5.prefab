@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3711209628556113392}
   - component: {fileID: 1650029262792606660}
   - component: {fileID: 1872530154391010505}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Spot Light (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -124,7 +124,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1734018243937142721}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Lights
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -159,7 +159,7 @@ GameObject:
   - component: {fileID: 1162707419312255236}
   - component: {fileID: 8693738759366828275}
   - component: {fileID: 9078650772745560670}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Spot Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -275,6 +275,11 @@ PrefabInstance:
       propertyPath: speed
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 2528351055965522481, guid: 683c15f9e972f4655b2620101423b704,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 2602126910305984526, guid: 683c15f9e972f4655b2620101423b704,
         type: 3}
       propertyPath: m_Size.y
@@ -294,6 +299,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Center.z
       value: -0.00000047680874
+      objectReference: {fileID: 0}
+    - target: {fileID: 3200442094675154457, guid: 683c15f9e972f4655b2620101423b704,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3309444024693314029, guid: 683c15f9e972f4655b2620101423b704,
         type: 3}
@@ -319,11 +329,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: c4aa65010845d3f4d802a581ee13480e, type: 2}
+      objectReference: {fileID: 2100000, guid: be442974072fc914ba834a1556212849, type: 2}
+    - target: {fileID: 4013408633018750571, guid: 683c15f9e972f4655b2620101423b704,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4817440432585934006, guid: 683c15f9e972f4655b2620101423b704,
         type: 3}
       propertyPath: m_Name
-      value: ObstacleCar 3
+      value: ObstacleCar 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4817440432585934006, guid: 683c15f9e972f4655b2620101423b704,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4817440432585934006, guid: 683c15f9e972f4655b2620101423b704,
         type: 3}
@@ -349,6 +369,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Center.z
       value: -0.00000050680524
+      objectReference: {fileID: 0}
+    - target: {fileID: 5159568093644245307, guid: 683c15f9e972f4655b2620101423b704,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5301066753220271628, guid: 683c15f9e972f4655b2620101423b704,
         type: 3}
@@ -405,6 +430,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8153256910966958404, guid: 683c15f9e972f4655b2620101423b704,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -5219077140469926614, guid: 683c15f9e972f4655b2620101423b704, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 683c15f9e972f4655b2620101423b704, type: 3}
@@ -442,7 +472,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2116d83e9bcb567409409ded87830763, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 30
+  speed: 60
   removeLife: 100
   impactTime: 0
 --- !u!4 &626932493768941185 stripped

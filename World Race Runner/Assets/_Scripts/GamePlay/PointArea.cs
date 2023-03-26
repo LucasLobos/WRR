@@ -31,7 +31,7 @@ public class PointArea : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            SoundController.instance.PlaySound(collect2);
+            SoundManager.instance.PlaySound(collect2);
             AddPoints();
         }
     }

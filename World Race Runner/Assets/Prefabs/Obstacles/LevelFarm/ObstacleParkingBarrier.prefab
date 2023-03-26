@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5454513658798245234}
   - component: {fileID: 5445719628496378966}
   - component: {fileID: 5417686762179916188}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Parking_barrier
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -111,7 +111,7 @@ GameObject:
   - component: {fileID: 5454174492002614282}
   - component: {fileID: 5446507859112479066}
   - component: {fileID: 5417721988819628252}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Barrier
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -210,7 +210,7 @@ GameObject:
   - component: {fileID: 5460998389361389788}
   - component: {fileID: -5226830703121426762}
   - component: {fileID: -2834686544459798659}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ObstacleParkingBarrier
   m_TagString: Obstacle
   m_Icon: {fileID: 0}

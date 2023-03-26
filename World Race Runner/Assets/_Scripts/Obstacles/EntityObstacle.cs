@@ -34,6 +34,7 @@ public class EntityObstacle : MonoBehaviour
         {
             _currentTime = 0;
             player.RemoveLife(removeLife);
+            Debug.Log("Kill Player");
         }
     }
 }

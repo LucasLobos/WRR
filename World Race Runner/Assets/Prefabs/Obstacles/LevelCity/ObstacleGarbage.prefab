@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6200081475659984001}
   - component: {fileID: 1493666188216871318}
   - component: {fileID: -6448461688234185218}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ObstacleGarbage
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2116d83e9bcb567409409ded87830763, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
+  speed: 30
   removeLife: 100
   impactTime: 0
 --- !u!54 &-6448461688234185218
@@ -77,6 +77,14 @@ PrefabInstance:
     - target: {fileID: 1305419447455220, guid: 8983c8df5fb12ea4bb76cdf0ef2f9c1b, type: 3}
       propertyPath: m_Name
       value: trashcan prefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 1305419447455220, guid: 8983c8df5fb12ea4bb76cdf0ef2f9c1b, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1787287673974826, guid: 8983c8df5fb12ea4bb76cdf0ef2f9c1b, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4265163953248404, guid: 8983c8df5fb12ea4bb76cdf0ef2f9c1b, type: 3}
       propertyPath: m_RootOrder
@@ -142,9 +150,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6200081475659984001}
     m_Modifications:
+    - target: {fileID: 1184551858798100, guid: b0bb4b9691721cf4791e1124d867edd8, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1394111307883294, guid: b0bb4b9691721cf4791e1124d867edd8, type: 3}
       propertyPath: m_Name
       value: trashBag prefab (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1394111307883294, guid: b0bb4b9691721cf4791e1124d867edd8, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4631891537778504, guid: b0bb4b9691721cf4791e1124d867edd8, type: 3}
       propertyPath: m_RootOrder
@@ -229,9 +245,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6200081475659984001}
     m_Modifications:
+    - target: {fileID: 1184551858798100, guid: b0bb4b9691721cf4791e1124d867edd8, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1394111307883294, guid: b0bb4b9691721cf4791e1124d867edd8, type: 3}
       propertyPath: m_Name
       value: trashBag prefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 1394111307883294, guid: b0bb4b9691721cf4791e1124d867edd8, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4631891537778504, guid: b0bb4b9691721cf4791e1124d867edd8, type: 3}
       propertyPath: m_RootOrder
