@@ -19,7 +19,7 @@ public class TutorialVolume : MonoBehaviour
     
     private void Start()
     {
-        backButton.onClick.AddListener(gameManager.BackToMenu2);
+        backButton.onClick.AddListener(gameManager.BackToMenu);
         
     }
 

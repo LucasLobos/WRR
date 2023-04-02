@@ -26,9 +26,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainScene/FarmLevel/Word 1.unity
     guid: 5fdcefd87c66b514db1e6eee98fb34a6
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/MainScene/World 3.unity
-    guid: e9823b468682f2e42ac048fe432b1a5f
+    path: Assets/Scenes/MainScene/SnowLevel/World 3.unity
+    guid: bc25ce680805cac4d8659812d3b815c3
   - enabled: 1
     path: Assets/Scenes/EntryScene/Levels.unity
     guid: 40c8f19850c250a43910bb4357422bf7

@@ -3,37 +3,31 @@ using UnityEngine.UI;
 
 public class GameOver : MonoBehaviour
 {
-
-    [Header("Buttons")]
+    [Header("Button")]
     [SerializeField] private Button backToMenu;
+    
+    [Header("Canvas Controller")]
     [SerializeField] private CanvasController canvasController;
-
-    [Header("GameManager")]
-    private GameManager gameManager;
+    
+    [Header("Game Manager")]
+    [SerializeField] private GameManager gameManager;
     
     private void Awake()
     {
         gameManager = GameManager.instance;
     }
-
+    
     private void Start()
     {
-        BackToMenu();
-        SetPoint();
-       
-    }
-
-    private void BackToMenu()
-    {
         backToMenu.onClick.AddListener(canvasController.BackToMenu);
-
+        SetPoint();
     }
+
 
     private void SetPoint()
     {
+        
         canvasController.ShowScore(gameManager.GetPoints());
     }
-
-
     
 }

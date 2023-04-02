@@ -9,7 +9,7 @@ public class Win : MonoBehaviour
     [SerializeField] private CanvasController canvasController;
 
     [Header("GameManager")]
-    private GameManager gameManager;
+    [SerializeField] private GameManager gameManager;
     
     private void Awake()
     {
@@ -18,11 +18,16 @@ public class Win : MonoBehaviour
 
     private void Start()
     {
-        menuButton.onClick.AddListener(canvasController.BackToMenu);
+        BackToMenu();
         SetPoint();
        
     }
     
+    private void BackToMenu()
+    {
+        menuButton.onClick.AddListener(canvasController.BackToMenu);
+
+    }
     private void SetPoint()
     {
         canvasController.ShowScore(gameManager.GetPoints());

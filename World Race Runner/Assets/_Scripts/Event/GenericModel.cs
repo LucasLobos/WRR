@@ -1,10 +1,6 @@
 using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
-using UnityEditor.Rendering;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-using UnityEngine.Serialization;
+
 
 public class GenericModel : MonoBehaviour
 {
@@ -16,7 +12,9 @@ public class GenericModel : MonoBehaviour
     [SerializeField] private float m_jumpForce;
     [SerializeField] private bool grounded = true;
     [SerializeField] private LayerMask mask;
+
     private bool _isJumping;
+    
     
     [Header("Slide")]
     [SerializeField]private float _slideTime;
@@ -79,7 +77,6 @@ public class GenericModel : MonoBehaviour
             transform.position = new Vector3(currentXPosition, transform.position.y, transform.position.z);
         }
 
-        Debug.Log("Recived OnMoveInput, from GenericController, to GenericModel");
     }
 
     //-------------------------JUMP----------------------------------
@@ -90,7 +87,6 @@ public class GenericModel : MonoBehaviour
             _animator.SetBool("IsJumping", true);
             _isJumping = true;
             m_rigidbody.AddForce(Vector3.up * m_jumpForce, ForceMode.Impulse);
-            Debug.Log("Recived OnJump, from GenericController, to GenericModel");
             
         }
         

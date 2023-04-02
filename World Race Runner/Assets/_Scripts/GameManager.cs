@@ -6,8 +6,6 @@ public class GameManager : MonoBehaviour
     public bool dontDestroyOnLoad;
 
     [Header("Final points")] public int totalPoints;
-
- 
     [SerializeField] private CanvasController canvasController;
 
     private void Awake()
@@ -31,23 +29,22 @@ public class GameManager : MonoBehaviour
     //------------------ Points
     public void UpdatePoints(int points)
     {
+        
         totalPoints += points;
         canvasController.ShowScore(totalPoints);
-        
     }
 
     public int GetPoints()
     {
         return totalPoints;
     }
-
-
+    
     //------------------------Scene swaps
     public void QuitGame()
     {
         Application.Quit();
     }
-    public void BackToMenu2()
+    public void BackToMenu()
     {
         SceneManager.LoadScene("Start");
     }
@@ -70,7 +67,7 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene("World 2");
     }
-    public void LevelSpace()
+    public void LevelSnow()
     {
         SceneManager.LoadScene("World 3");
     }

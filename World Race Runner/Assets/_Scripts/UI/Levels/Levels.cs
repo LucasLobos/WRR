@@ -23,8 +23,8 @@ public class Levels : MonoBehaviour
     {
         Level1.onClick.AddListener(gameManager.LevelFarm);
         Level2.onClick.AddListener(gameManager.LevelCity);
-        Level3.onClick.AddListener(gameManager.LevelSpace);
-        Back.onClick.AddListener(gameManager.BackToMenu2);
+        Level3.onClick.AddListener(gameManager.LevelSnow);
+        Back.onClick.AddListener(gameManager.BackToMenu);
 
     }
 }

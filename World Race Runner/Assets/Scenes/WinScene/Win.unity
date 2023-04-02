@@ -1065,6 +1065,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menuButton: {fileID: 1580886271}
   canvasController: {fileID: 858908051}
+  gameManager: {fileID: 1181274843}
 --- !u!1 &916815046
 GameObject:
   m_ObjectHideFlags: 0
