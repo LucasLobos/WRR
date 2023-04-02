@@ -18,7 +18,7 @@ public class Win : MonoBehaviour
 
     private void Start()
     {
-        menuButton.onClick.AddListener(gameManager.BackToMenu);
+        menuButton.onClick.AddListener(canvasController.BackToMenu);
         SetPoint();
        
     }

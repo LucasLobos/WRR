@@ -25,6 +25,7 @@ public class EntityObstacle : MonoBehaviour
         transform.position += transform.forward * (speed * Time.deltaTime);
     }
 
+  
     
     protected void OnCollisionEnter(Collision collision)
     {

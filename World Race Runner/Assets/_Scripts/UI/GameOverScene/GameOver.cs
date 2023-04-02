@@ -18,12 +18,16 @@ public class GameOver : MonoBehaviour
 
     private void Start()
     {
-
-        backToMenu.onClick.AddListener(gameManager.BackToMenu);
+        BackToMenu();
         SetPoint();
        
     }
-     
+
+    private void BackToMenu()
+    {
+        backToMenu.onClick.AddListener(canvasController.BackToMenu);
+
+    }
 
     private void SetPoint()
     {

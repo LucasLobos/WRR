@@ -5,7 +5,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     public bool dontDestroyOnLoad;
 
-    [Header("Final points")] public int totalPoints = 0;
+    [Header("Final points")] public int totalPoints;
 
  
     [SerializeField] private CanvasController canvasController;
@@ -47,17 +47,12 @@ public class GameManager : MonoBehaviour
     {
         Application.Quit();
     }
-
-    public void BackToMenu()
+    public void BackToMenu2()
     {
         SceneManager.LoadScene("Start");
     }
-
-    public void RestartGame()
-    {
-        SceneManager.LoadScene("World 1");
-    }
-
+   
+    
     public void TutorialGame()
     {
         SceneManager.LoadScene("Tuto&VolumeControl");

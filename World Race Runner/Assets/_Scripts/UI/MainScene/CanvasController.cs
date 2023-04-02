@@ -1,6 +1,6 @@
 using TMPro;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class CanvasController : MonoBehaviour
 {
     [Header("Score")] [SerializeField] private TMP_Text scoreGame;
@@ -11,6 +11,9 @@ public class CanvasController : MonoBehaviour
         scoreGame.text = "SCORE : " +  points;
     }
 
-  
+    public void BackToMenu()
+    {
+        SceneManager.LoadScene("Start");
+    }
 }
 
